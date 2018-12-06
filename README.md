@@ -1,3 +1,3 @@
 Des Gateaux and du pains
 
-A full stack bakery site design with Ruby Sinatra, bootstrap, javascript.
+A full stack bakery site design with Ruby Sinatra, Bootstrap, Javascript. Action mailer.s
