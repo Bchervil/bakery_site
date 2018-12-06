@@ -3,6 +3,7 @@ require 'action_mailer'
 require './send.rb'
 require_relative 'class.rb'
 
+
 require 'sinatra/base'
 
 @tea = []
@@ -101,12 +102,12 @@ erb :all
 end
 
 post '/contact' do
-@user = Newsletter.welcome("hall.shauna@gmail.com").deliver_now
-
-erb :email_sent
+  email = params["email"]
+  Newsletter.welcome(email).deliver_now
+  erb :email_sent
 end
 
-post '/catering' do
-@user = Newsletter.welcome("hall.shauna@gmail.com").deliver_now
+get '/catering' do
+
 erb :catering_sent
 end
