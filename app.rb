@@ -107,7 +107,7 @@ post '/contact' do
   erb :email_sent
 end
 
-get '/catering' do
+post '/catering' do
 
 erb :catering_sent
 end
