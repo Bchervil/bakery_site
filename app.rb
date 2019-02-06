@@ -102,8 +102,8 @@ erb :all
 end
 
 post '/contact' do
-  email = params["email"]
-  Newsletter.welcome(email).deliver_now
+  # email = params["email"]
+  # Newsletter.welcome(email).deliver_now
   erb :email_sent
 end
 
